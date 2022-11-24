@@ -1,0 +1,13 @@
+#contactpg1{
+    text-align: center;
+    background-image: url("../Constant/Images/thanks.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#ccontact{
+    font-size: larger;
+    font-weight: bold;
+}

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Price Prediction</title>
+    <link rel="stylesheet" href=".\static\CSS\style.css">
+</head>
+
+<body class="Main">
+
+    <div class="col-12" style="text-align: center;color: white;width: 90%;">
+        <marquee behavior="" direction="">
+            <h1>Welcome to Old Car Price Predictor</h1>
+        </marquee>
+    </div>
+
+    <div class="card-body">
+        <form method="post" accept-charset="utf-8">
+
+            <div class="col-10">
+                <label><b>Select Company</b></label>
+                <select class="" name="company" id="company" required="1"
+                    onchange="Load_car_models(this.id,'car_model')">
+                    {% for company in companies %}
+                    <option value="{{company}}">{{company}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <br>
+
+            <div class="col-10">
+                <label><b>Select Model</b></label>
+                <select class="selectpicker form-control" name="car_model" id="car_model" required="1">
+                    {% for model in car_models %}
+                    <option value="{{model}}">{{model}}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <br>
+            <div class="col-10">
+
+                <label><b>Select Year of purchase</b></label>
+                <select class="selectpicker form-control" name="year" id="year" required="1">
+
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+                    <option value="2011">2011</option>
+                    <option value="2010">2010</option>
+                    <option value="2009">2009</option>
+                    <option value="2008">2008</option>
+                    <option value="2007">2007</option>
+                    <option value="2006">2006</option>
+                </select>
+
+            </div>
+            <br>
+
+            <div class="col-10">
+
+                <label><b>Select Fuel Type</b></label>
+                <select class="selectpicker form-control" name="fuel_type" id="fuel_type" required="1">
+                    {% for fuel_type in fuel_types %}
+                    <option value="{{ fuel_type }}">{{ fuel_type }}</option>
+                    {% endfor %}
+                </select>
+
+            </div>
+            <br>
+
+            <div class="col-10">
+                <label><b>Enter Number Of Kilometers</b></label>
+                <input required="1" class="form-control" type="text" name="kilo_driven" id="kilo_driven"
+                    placeholder="Enter no. of kilometer">
+
+                </select>
+
+            </div>
+            <br>
+
+            <div class="col-12" style="text-align: center;margin-top: 20px;" >
+                <button class="btn btn-primary form-control" onclick="send_data()">Predict Price</button>
+            </div>
+            
+            <h3 style="text-align: center;"><span id="prediction"></span></h3>
+
+        </form>
+        <br>
+
+    </div>
+
+    </div>
+
+    <script>
+
+
+        function Load_car_models(company_id, car_model_id) {
+            var company = document.getElementById(company_id);
+            var car_model = document.getElementById(car_model_id);
+
+
+            car_model.value = "";
+            car_model.innerHTML = "";
+
+            // console.log(company.value);
+
+            {% for company in companies %}
+
+            if (company.value == "{{company}}") {
+                {% for model in car_models %}
+
+                {% if company in model %}
+
+                var newOption = document.createElement("option");
+                newOption.value = "{{model}}";
+                newOption.innerHTML = "{{model}}";
+                car_model.options.add(newOption);
+                {% endif %}
+
+                {% endfor %}
+            }
+
+
+            {% endfor %}
+        }
+
+        function form_handler(event) {
+            event.preventDefault();
+        }
+
+
+        function send_data() {
+            document.querySelector('form').addEventListener('submit', form_handler);
+
+            var fd = new FormData(document.querySelector('form'));
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/predict', true);
+
+            document.getElementById('prediction').innerHTML = "Wait! predicting the price...";
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == XMLHttpRequest.DONE) {
+                    document.getElementById("prediction").innerHTML = "Prediction : " + xhr.responseText;
+                }
+            }
+
+            xhr.onload = function () { };
+
+            xhr.send(fd);
+            // suppress from default behaviour
+
+
+            // send and erecieve data to predict
+        }
+    </script>
+
+
+</body>
+
+</html>

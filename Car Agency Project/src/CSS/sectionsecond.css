@@ -1,0 +1,85 @@
+#mostsearch{
+    font-size:30px;
+    margin-left:10px;
+    font-weight:150px;
+    color: white;
+    
+}
+
+#hrline{
+    color: crimson;
+    width:97vw;
+}
+
+#section2{
+   
+    background-color: #010122;
+    
+    height: 400px;
+    padding-bottom: 10px;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+#carsectionssecond{
+    height: 300px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    margin-left: 35px;
+
+}
+
+#carwithprice{
+    border-radius: 10px;
+    background-color: white;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    box-shadow: 2px 2px gray;
+}
+
+
+
+#choosetypemost{
+    margin-left: 10px;
+}
+
+#choosetypemost button{
+    background-color: white;
+    color: brown;
+    width: 100px;
+    border: 2px black solid;
+    margin-left: 10px;
+}
+#carimg2second{
+    width: 250px;
+    height: 200px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#link{
+    text-decoration: none;
+}
+#knowmore{
+    color: black;
+    padding:3px;
+    background-color: white;
+    width: 100px;
+    height: 20px;
+    text-align: center;
+    box-shadow: 1px 1px gray;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#bigline{
+    margin-left: 150px;
+}

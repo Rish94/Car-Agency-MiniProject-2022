@@ -1,0 +1,31 @@
+#aboutmain{
+    background-image: url("../Constant/Images/aboutbg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 10px;
+}
+
+#aboutdiv2{
+padding-left:10px;
+padding-right: 10px;
+}
+
+#imgabout{
+    float: right;
+    width: 340px;
+    height: 240px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px crimson;
+}
+
+
+#abouth3{
+    text-align: center;
+
+}
+
+
+#aboutp{
+    color: brown;
+    font-weight: bold;
+}

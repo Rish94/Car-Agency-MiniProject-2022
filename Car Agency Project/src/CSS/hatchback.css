@@ -1,0 +1,80 @@
+#hatchcarmaruti{
+    width: 100%;
+    background-image: radial-gradient(white,#010122);
+}
+
+#hatchsectionsmaruti{
+    height: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* display: grid;
+    grid-template-columns: repeat(1,1fr); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center;
+    justify-content: center; */
+}
+
+
+
+#hatch{
+    border-radius: 10px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height: 180px;
+    width: 700px;
+    border: 0.5px solid grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 1px 2px gray;
+    text-align: center;
+    padding-right: 30px;
+}
+
+#carsecmaruti:hover{
+    height: 250px;
+    width: 800px;
+
+}
+
+#carimg{
+    margin-left: 10px;
+    width: 200px;
+    height: 180px;
+    border-radius: 5px;
+}
+
+#carhead{
+    color: rgb(0, 0, 56);
+    font-weight: bold;
+    font-size: larger;
+    font-family:'Times New Roman', Times, serif ;
+}
+
+#carprize{
+    color: blue;
+    font-size: medium;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#goforbooking{
+    text-decoration: none;
+    border: 1px solid brown;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 2px;
+    padding-bottom: 3px;
+
+    font-size: smaller;
+}
+
+#spes{
+    color: gray;
+    font-size: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}

@@ -1,0 +1,25 @@
+.Main{
+    background-color: #010122;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-body{
+    margin-top: 80px;
+    background-color: white;
+    width: 80%;
+    height: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 3px gray;
+}
+
+.col-10{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+

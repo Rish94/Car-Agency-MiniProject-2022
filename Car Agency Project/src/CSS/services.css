@@ -1,0 +1,144 @@
+#servih3{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#mainservicesec{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#serlinehr{
+    color: #010122;
+}
+
+#carsections1{
+    
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+
+#serwith1{
+    background-image: url("../Constant/Images/newsercar.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 0px;
+    width: 99.5%;
+    border: 1px solid gray;
+    box-shadow: 2px 2px #010122;
+    display: flex;
+    justify-content: start;
+}
+
+#serwith2{
+    margin-top: 10px;
+    background-image: url("../Constant/Images/oldsercar.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 0px;
+    width: 99.5%;
+    border: 1px solid gray;
+    box-shadow: 2px 2px #010122;
+    display: flex;
+    justify-content: end;
+}
+#serwith3{
+    margin-top: 10px;
+    background-image: url("../Constant/Images/ser.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 0px;
+    width: 99.5%;
+    border: 1px solid gray;
+    box-shadow: 2px 2px #010122;
+    display: flex;
+    justify-content: start;
+}
+
+#serwith4{
+    margin-top: 10px;
+    background-image: url("../Constant/Images/ser2.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 0px;
+    width: 99.5%;
+    border: 1px solid gray;
+    box-shadow: 2px 2px #010122;
+    display: flex;
+    justify-content: end;
+}
+#serwith5{
+    margin-top: 10px;
+    background-image: url("../Constant/Images/selloldcar.png");
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 0px;
+    width: 99.5%;
+    border: 1px solid gray;
+    box-shadow: 2px 2px #010122;
+    display: flex;
+    justify-content: start;
+}
+
+
+#serwithsubstart{
+    height: 100%;
+    width: 300px;
+    padding-bottom: 30px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+    margin-left: 150px;
+    justify-content: space-between;
+
+}
+
+#serwithsubend{
+    height: 100%;
+    width: 300px;
+    padding-bottom: 30px;
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 1px 1px 1px rgb(255, 255, 255);
+    margin-right: 150px;
+    justify-content: space-between;
+
+}
+
+#choosetype{
+    margin-left: 10px;
+}
+
+#choosetype button{
+    background-color: wheat;
+    color: white;
+    width: 100px;
+    border: 2px snow solid;
+}
+#serimg{
+    width: 300px;
+    height: 200px;
+}
+
+#sermore{
+    background-color: white;
+    width: 160px;
+    border: 2px solid rgb(255, 0, 47);
+    text-align: center;
+    font-weight: bold;
+}
+
+
