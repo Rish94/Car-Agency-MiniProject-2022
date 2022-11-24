@@ -62,4 +62,13 @@ a{
     font-size: larger;
 }
 
+#login
+{
+    margin-right: 40px;
+    font-size: larger;
+    font-weight: bold;
+    color:white;
+    text-decoration: none;
+}
+
 

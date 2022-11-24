@@ -3,6 +3,7 @@ import '../CSS/signin.css';
 import {auth} from '../firebase';
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
+var currUser = null;
 const LogIn=()=>{
 
     const navigate = useNavigate();
@@ -33,12 +34,14 @@ const LogIn=()=>{
                 .then(async(res)=>{
                     const user = res.user;
                     console.log(user);
+                    currUser = user;
                     alert("Login Successful")
                     navigate("/")
                 })
                 .catch((err)=> {
                     alert(err.message);
                     console.log("Err - ",err);
+                    currUser = null;
                 });
         }
     };
@@ -84,3 +87,4 @@ const LogIn=()=>{
 }
 
 export default LogIn;
+export {currUser};
