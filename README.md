@@ -1,4 +1,3 @@
 # Car-Agency-MiniProject-2022
-# Developed By : Ashish Senger Rohit Saxena  Rishabh Agarwal
-                
+# Developed By : Rishabh Agarwal , Ashish Senger , Rohit Saxena  
                  
